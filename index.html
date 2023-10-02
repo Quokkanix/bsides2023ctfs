@@ -8,7 +8,9 @@
             font-family: Arial, sans-serif; /* Use a modern font */
             background-color: #f0f0f0; /* Set background color to light gray */
         }
-
+.monospaced {
+    font-family: "Courier New", Courier, monospace;
+  }
         .container {
             max-width: 1000px; /* Set the maximum width of the container */
             margin: 0 auto; /* Center the container horizontally on the page */
@@ -109,11 +111,37 @@
 
         <h2>Cryptic Hacker Crossword</h2>
         <p>I got first blood on this one! But I have to admit .. much credit goes to Chat GPT. That being said though, it helped me learn a bunch of things which is fantastic! (eg gentoo package manager being called portage).
-        <p><img src="cw.png"></p></p>
+        <p><img src="cw.png"></p>
 
         <h2>Dark/QR/Light</h2>
-        <p>Coming </p>
+        <p>At first I thought I had was to invert one side and pop them together. So i tried that ..
+        <p><img src="qr1.png"></p>
+        <p>Inverted one side ..</p>
+        <p><img src="qr2.png"></p>
+        <p>Popped them together. There was just enough modules on one side that we could stretch it across. The very middle column of data was lost. However, even once it was together it wouldn't scan. I was lucky to be taught a bit about QR codes. </p>
 
+        <p><img src="qrx.png"></p>
+        <p>The timing pattern is just an alternating black/white modules, which my code had.<br>format information is meant to repeat twice.. But, you can see here, it didn't.
+        <p><img src="qr3.png"></p>
+        <p>So, I took the side of one QR code, and the side of the other, and popped them together .. 
+        <p><img src="qr4.png"></p>
+        We have a match now!
+        <p><img src="qr5.png"></p><p>I get the first part of the code .. </p>
+        <p><span class="monospaced">AHMULAHDCF22!Fa:<br>
+        cbasinwroefasupayv}</span></p>
+    <br><br>Okay that's looking promising.. I have a curly bracket.. whats the bet the other two halves will contain the other curly bracket.<br><br>
+        <p><img src="qr6.png"></p><p>It works! I didn't even need to sretch out those parts of the modules you can barely see..</p>
+        <p><span class="monospaced">MYE NESE T 03 lg<br>yer{koqcdxlgjmhzts</span></p>
+<p>Okay I have two halves now.. Let me spend far too long starting at them.. </p>
+        <p>I see the letters Fa and lg .. looks like they were split up all alternating styles!</p>
+        <p></p><span class="monospaced">
+        AHMULAHDCF22!Fa:<br>
+        MYE NESE T 03 lg<br>
+        cbasinwroefasupayv}<br>
+        yer{koqcdxlgjmhzts</span></p>
+        <p>Done! :D</p>
+
+        
         <h2>Passwordle</h2>
         <p>My absolutely favourite CTF. It was written by the guy who did the awesome design and theme this year. What a guy!</p>
         <p>This was very beginner friendly and actually _fun_ rather than _funstruating_. It plays just like wordle and it gives you password hints. I will confess when I started running out of guesses on the one that references transformers I opened up a new private window on my browser so I could get more guesses >.></p>

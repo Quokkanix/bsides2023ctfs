@@ -34,15 +34,54 @@
             display: block; /* Center align images */
     margin: 0 auto; /* Center align images */
         }
+
+        /* CSS for the navigation menu */
+        .nav-menu {
+            position: sticky;
+            top: 0;
+            background-color: #3498db;
+            padding: 10px;
+        }
+        .nav-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-menu li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        
     </style>
 </head>
-<body>
+<body> <div class="nav-menu">
+        <ul>
+           <li><a href="#porcine-enclosure">Porcine Enclosure</a></li>
+            <li><a href="#not-a-six-dot-matrix">Not A Six Dot Matrix</a></li>
+            <li><a href="#scalable-vector-grille">Scalable Vector Grille</a></li>
+            <!-- Add more links for other sections -->
+            <li><a href="#legal-eagle">Legal Eagle</a></li>
+            <li><a href="#my-head-hurts">My Head Hurts</a></li>
+            <li><a href="#cryptic-hacker-crossword">Cryptic Hacker Crossword</a></li>
+            <li><a href="#dark-qr-light">Dark/QR/Light</a></li>
+            <li><a href="#passwordle">Passwordle</a></li>
+            <li><a href="#would-you-like-to-know-more">Would you like to know more?</a></li>
+            <!-- Add more links for other sections as needed -->
+            
+        </ul>
+    </div>
+    
     <div class="container">
         <p align='center'><img src="idkwhatdo.png" alt="WhatDo Image"></p>
         <h1>Panda's Writeups</h1>
         <p>Some bsides 23 writeups done by a noob who has never used a computer before.</p>
 
-        <h2>Porcine Enclosure</h2>
+        <h2 id="porcine-enclosure">Porcine Enclosure</h2>
         <p><i>Banner challenge Sigma<br></i></p>
         <p>Okay, so for this one, I knew it was a Banner challenge. I went over to the CTF Admin Desk and saw the banner with the code on..<br>
         <p><img src="pigpen.png" alt="Pigpen Image"></p>
@@ -51,7 +90,7 @@
         <p><img src="pigpen2.png" alt="Pigpen Image 2"></p>
         <p>I couldn't remember the name of the darn code though. Porcine Enclosure = Pig Pen. I did a quick image search for pig pen to help me translate it and get the flag! Yay! :D</p>
 
-        <h2>Not A Six Dot Matrix</h2>
+        <h2 id="not-a-six-dot-matrix">Not A Six Dot Matrix</h2>
         <p><i>Banner challenge Zeta</i><br>
         <p>I knew that it related to this picture below:<br>
         <p><img src="notbraille.png" alt="Image 1"></p>
@@ -61,7 +100,7 @@
         <p><img src="notbraille3.png" alt="Image 2"></p>
         <p>I had a look at the site and learned about what ELIA is. Once I knew, I was able to solve it! Yay!</p>
 
-        <h2>Scalable Vector Grille</h2>
+        <h2 id="scalable-vector-grille">Scalable Vector Grille</h2>
         <p>I did this by downloading the two files.. two images, which fit on top of each other quite nicely ..</p>
         <p><img src="svg1.png" alt="SVG 1"></p>
         <p><i>cybears{ThiSfLAGisa4GerY}</i>? Nope.. that's not correct. I doubt it would it have been easy anyway .. so let me check that svg in more detail ..</p>
@@ -75,16 +114,16 @@
         <p>Okay and this one has no line.. hmm let me fix that ..</p>
         <p><img src="svg6.png" alt="SVG 6"></p>
         <p>Okay the rectangles are numbered.. i'm guessing we should order the chars from 0-14.. i'll colour them in rainbow order ..
-        <p><img src="svgr.png" alt="SVG 7"></p>
+        <p><img src="svgr.png" alt="svgr"></p>
         <p>I put the chars in order using the coours to follow .. still.. there's one missing.. but that's okay.. I can guess that it's a g or a G now.. and yay! Got the flag.</p>
        
         
-        <h2>Legal Eagle</h2>
+         <h2 id="legal-eagle">Legal Eagle</h2>
         <p><i>Did you read the fine print?</i></p>
         <p>So there's a special place in hell for the person who made this challenge. </p>
 
 
-        <h2>My Head Hurts</h2>
+        <h2 id="my-head-hurts">My Head Hurts</h2>
         <p>I go to the URL<br> 
         ... http://my-head-hurts.chal.cybears.io/<br>
         Nothing there.. so I'm all 'okay wut'.. the challenge says 'My Head Hurts' so prob something to do with the headers.. so let me open up dev tools and take a look.</p>
@@ -104,11 +143,11 @@
         <p>Turns out I was using dev tools wrong which is why it wasn't coming up.. but hoorah I got it!</p>
         <p>The thing I loved about this challenge is that I could tell I was getting closer and closer bit by bit.. I really enjoyed it despite being frustrated at times..  I learned a heap I didn't know about headers and also how to use dev tools a bit better..</p>
 
-        <h2>Cryptic Hacker Crossword</h2>
+        <h2 id="cryptic-hacker-crossword">Cryptic Hacker Crossword</h2>
         <p>I got first blood on this one! But I have to admit .. much credit goes to Chat GPT. That being said though, it helped me learn a bunch of things which is fantastic! (eg gentoo package manager being called portage).
         <p><img src="cw.png"></p>
 
-        <h2>Dark/QR/Light</h2>
+         <h2 id="dark-qr-light">Dark/QR/Light</h2>
         <p>At first I thought I had was to invert one side and pop them together. So i tried that ..
         <p><img src="qr1.png"></p>
         <p>Inverted one side ..</p>
@@ -137,13 +176,13 @@
         <p>Done! :D</p>
 
         
-        <h2>Passwordle</h2>
+         <h2 id="passwordle">Passwordle</h2>
         <p>My absolutely favourite CTF. It was written by the guy who did the awesome design and theme this year. What a guy!</p>
         <p>This was very beginner friendly and actually _fun_ rather than _funstruating_. It plays just like wordle and it gives you password hints. I will confess when I started running out of guesses on the one that references transformers I opened up a new private window on my browser so I could get more guesses >.></p>
         <p><img src="passwordle.png" alt="heef is best"></p>
 
-        <h2>Would you like to know more?</h2>
-        <p>The fact this was a sponsor ctf was a big clue. The major sponsor was ASD. Headed over to their careers page. Did a quick check of the page's source to see if there was any cybears.. nope.. then I looked at their job listings..
+        <h2 id="would-you-like-to-know-more">Would you like to know more?</h2>
+       <p>The fact this was a sponsor ctf was a big clue. The major sponsor was ASD. Headed over to their careers page. Did a quick check of the page's source to see if there was any cybears.. nope.. then I looked at their job listings..
           <p><img src="asd1.png"></p>
         <p>This looks like the type of job targeted towards the nerds here .. Let's check that job out .. and under 'Desirable Qualifications' ...</p>
         <p><img src="asd2.png"></p>
